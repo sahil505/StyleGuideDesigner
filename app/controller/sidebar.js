@@ -1,9 +1,12 @@
 'use strict';
 
-var model = require('../models/sidebar');
+var layer = require('../models/sidebar');
 
 var sidebar = module.exports = {};
 
 sidebar.get = function () {
-	return model.getLayers();
+	var layers = layer.getLayers();
+	layer.get(layers[0]);
+	
+	return layers;
 };
