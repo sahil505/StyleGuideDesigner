@@ -1,15 +1,15 @@
 'use strict';
 
-var model = module.exports = {};
+var layer = module.exports = {};
 var fs = require('fs');
 
-model.newData = [];
+layer.layers = [];
 
 // Logic to read an array of files inside a directory
-model.get = function () {
+layer.set = function () {
 	var allData = fs.readdirSync('tests/all/scss');
 	var prosilverData = fs.readdirSync('tests/prosilver/scss');
-	var localData = model.newData;
+	var localData = layer.layers;
 	for (var i = 0; i < allData.length; i++) {
 		if (allData[i] === 'base' || allData[i] === 'settings' || allData[i] === 'objects' || allData[i] === 'components') {
 			localData.push(allData[i]);
