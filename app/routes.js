@@ -4,7 +4,7 @@ var	express = require('express');
 var	config = require('./controller/config');
 var	sidebar = require('./controller/sidebar');
 
-var	router = express.Router();
+var	router = new express.Router();
 
 // Route to UPDATE the config
 router.post('/settings/config', function (req, res) {
