@@ -1,5 +1,4 @@
 # Styleguide Designer
-[![Build Status](https://travis-ci.org/sahil505/StyleGuideDesigner.svg?branch=master)](https://travis-ci.org/sahil505/StyleGuideDesigner)
 
 ## What is it
 A Styleguide Driven Development System for Creating, Managing, customizing, & editing themes for PHPBB. GSoC 2017 project (https://www.phpbb.com/development/gsoc/ideas/#styleguide)
